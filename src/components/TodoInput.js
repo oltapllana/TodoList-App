@@ -5,7 +5,7 @@ const TodoInput = (props) => {
     const [enteredTodo, setEnteredTodo] = useState('');
     const TodoHandler = (event) =>{
         console.log(event.target.value);
-        setEnteredTodo(event.target.value)
+        setEnteredTodo(event.target.value);
 
     }
     const saveTodo = (event) =>{
@@ -14,8 +14,8 @@ const TodoInput = (props) => {
             title: enteredTodo,
             id: Math.random().toString()
         }
-        props.onSave(newTodo)
-        setEnteredTodo('')
+        props.onSave(newTodo);
+        setEnteredTodo('');
     }
     return <form className={styled.form} onSubmit={saveTodo}>
         <div className={styled.controls}>

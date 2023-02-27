@@ -6,7 +6,7 @@ import deleteImg from '../assets/icons8-trash.svg'
 import editImg from "../assets/icons8-edit.svg"
 const TodoItem = (props) => {
   const deleteTodo = () => {
-    props.onDelete(props.id)
+    props.onDelete(props.id);
   }
 
   const [input, setInput] = useState(false)
@@ -14,12 +14,12 @@ const TodoItem = (props) => {
     console.log(enteredTitle);
     setNewTitle(enteredTitle);
   }
-  const [newTitle, setNewTitle] = useState(props.title)
+  const [newTitle, setNewTitle] = useState(props.title);
 
   const editItem = () => {
     
     console.log(props.id);
-    setInput(!input)
+    setInput(!input);
     console.log('a:' +newTitle);
   };
   return (

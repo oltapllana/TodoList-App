@@ -4,7 +4,7 @@ import Button from "./UI/Button";
 const EditInput = (props) => {
 
   const [title, setEnteredTitle] = useState(props.title)
-  const [show, setShow] = useState(true)
+  const [show, setShow] = useState(true);
   const editedText = (event) => {
     console.log(event.target.value);
     setEnteredTitle(event.target.value);
@@ -14,7 +14,7 @@ const EditInput = (props) => {
     setShow(false);
     console.log(title);
 
-  props.onSaveEdit(title)
+  props.onSaveEdit(title);
   }
   
   
